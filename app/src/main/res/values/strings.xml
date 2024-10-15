@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Workshop</string>
+    <string name="saveText" translatable="false">Save</string>
+    <string name="loadText" translatable="false">Load</string>
+    <string name="app_title" translatable="false">Workshop</string>
+    <string name="chair">chair</string>
+</resources>
