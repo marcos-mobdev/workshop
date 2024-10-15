@@ -15,6 +15,8 @@ class DetalhesActivity : AppCompatActivity() {
         ActivityDetalhesBinding.inflate(layoutInflater)
     }
 
+    var texto: String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)

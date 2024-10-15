@@ -8,6 +8,10 @@ open class Animal( //Open na classe habilita herança para filhos
     open fun dormir() { //Open no método habilita override
         println("zzz")
     }
+
+    fun movimentar(){
+        println("Andando...")
+    }
 }
 
 class Cao(nome: String, peso: Double)
@@ -28,6 +32,7 @@ class Passaro(
     nome: String,
     peso: Double
 ) : Animal(nome, peso) {
+
     fun canta() { //metodo exclusivo da classe Passaro
         println("bem te vi!")
     }
@@ -43,6 +48,9 @@ fun main() {
     //bemtevi.canta()
     //bemtevi.dormir()
     toto.dormir()
+
+    //var produto = Produto()
+    //produto.apresentarProduto()
 
     //var produto = Produto()
     //produto.apresentarProduto()

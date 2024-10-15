@@ -4,4 +4,5 @@
     <string name="loadText" translatable="false">Load</string>
     <string name="app_title" translatable="false">Workshop</string>
     <string name="chair">chair</string>
+    <string name="workshop_text">Workshop</string>
 </resources>
