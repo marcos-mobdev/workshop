@@ -12,13 +12,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:contentDescription="@string/app_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageResult" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
 
     <Button
         android:id="@+id/btnSearch"
@@ -26,25 +26,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:elevation="6dp"
-        android:text="Consultar"
+        android:text="@string/btn_search"
         app:icon="@drawable/ic_search_24"
         app:iconGravity="textEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editCep" />
-
-    <ImageView
-        android:id="@+id/imageResult"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/chair"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSearch"
-        app:srcCompat="@drawable/cadeira" />
 
     <EditText
         android:id="@+id/editCep"
@@ -54,10 +41,25 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="@string/cep"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResult"
+        app:srcCompat="@drawable/boxes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

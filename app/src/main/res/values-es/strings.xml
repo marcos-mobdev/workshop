@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Workshop</string>
-    <string name="btn_search">Pesquisar</string>
-    <string name="btn_back">Voltar</string>
+    <string name="btn_search">Buscar</string>
+    <string name="btn_back">Volver</string>
 </resources>

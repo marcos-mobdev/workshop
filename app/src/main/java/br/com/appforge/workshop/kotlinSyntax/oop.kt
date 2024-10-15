@@ -1,4 +1,4 @@
-package br.com.appforge.workshop.anotacoesAula
+package br.com.appforge.workshop.kotlinSyntax
 
 
 open class Animal( //Open na classe habilita herança para filhos

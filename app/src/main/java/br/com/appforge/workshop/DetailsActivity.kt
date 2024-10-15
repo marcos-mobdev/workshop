@@ -1,21 +1,15 @@
 package br.com.appforge.workshop
 
-import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import br.com.appforge.workshop.databinding.ActivityDetalhesBinding
+import br.com.appforge.workshop.databinding.ActivityDetailsBinding
 
-class DetalhesActivity : AppCompatActivity() {
+class DetailsActivity : AppCompatActivity() {
 
 
     private val binding by lazy{
-        ActivityDetalhesBinding.inflate(layoutInflater)
+        ActivityDetailsBinding.inflate(layoutInflater)
     }
-
-    var texto: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

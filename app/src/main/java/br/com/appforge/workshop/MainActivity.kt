@@ -46,9 +46,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private val retrofit by lazy{
-        RetrofitHelper.retrofitViacep
+        RetrofitHelper.retrofitViaCep
     }
-
     /*
     //Instanciando por componentes
     private lateinit var textResult : TextView
@@ -78,6 +77,7 @@ class MainActivity : AppCompatActivity() {
             CoroutineScope(Dispatchers.IO).launch {
                 consultCepForAddress()
             }
+
         }
     }
 
@@ -100,6 +100,7 @@ class MainActivity : AppCompatActivity() {
 
                 withContext(Dispatchers.Main){
                     binding.textResult.text = "$cep\n$street\n$neighborhood\n$city"
+                    binding.editCep.text.clear()
                 }
 
                 //Log.i(TAG, "consultCepForAddress: $cep - $street - $neighborhood - $city")
@@ -112,17 +113,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun navigateToDetails(){
-        val intent = Intent(this,DetalhesActivity::class.java)
+        val intent = Intent(this,DetailsActivity::class.java)
         startActivity(intent)
     }
+
 
     fun toggleImageResultVisibility(){
         isVisible = !isVisible
         //TODO 1 -  Resolver esse bug
         if(isVisible){
-            binding.imageResult.visibility = View.VISIBLE
+            binding.imageView.visibility = View.VISIBLE
         }else{
-            binding.imageResult.visibility = View.GONE
+            binding.imageView.visibility = View.GONE
         }
         //TODO 2 - Implementar nova função
         Log.i("log_api", "Toggle Image: $isVisible")

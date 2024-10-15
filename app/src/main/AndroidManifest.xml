@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Workshop"
         tools:targetApi="31">
         <activity
-            android:name=".DetalhesActivity"
+            android:name=".DetailsActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,4 +1,4 @@
-package br.com.appforge.workshop.anotacoesAula
+package br.com.appforge.workshop.kotlinSyntax
 
 fun main() {
 
